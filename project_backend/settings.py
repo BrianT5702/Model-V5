@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles','myapp'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'project_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'modelBuilder',
+        'USER': 'postgres',
+        'PASSWORD': '5702Tci123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
